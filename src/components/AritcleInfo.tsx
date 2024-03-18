@@ -7,6 +7,7 @@ import Text from "./styles/Text";
 import mainPost from "../../mainPost.json";
 import styled from "styled-components";
 import Link from "next/link";
+import { ARTICLE_HEADER_TEXT } from "../constants";
 
 const ArticleLinks = styled.ul`
   display: flex;
@@ -36,7 +37,7 @@ const AritcleInfo = () => {
     <ArticleInfoContainer>
       <Flex margin="1rem 0">
         <Text>
-          <b>In this article: 📝</b>{" "}
+          <b>{ARTICLE_HEADER_TEXT}</b>{" "}
         </Text>
       </Flex>
 

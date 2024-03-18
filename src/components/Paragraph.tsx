@@ -10,6 +10,12 @@ const ParagraphContainer = styled(Flex)`
   @media only screen and (max-width: 600px) {
     width: 100%;
   }
+
+  && p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 `;
 
 const Paragraph = ({ blogText }: { blogText: string }) => {

@@ -5,6 +5,7 @@ import Text from "./styles/Text";
 import styled from "styled-components";
 import PostLists from "./PostList";
 import { Post } from "src/types/Post";
+import { READ_MORE_HEADER_TEXT } from "../constants";
 
 const ReadMoreSection = styled(Flex)`
   background-color: var(--color-secondary);
@@ -34,7 +35,7 @@ const ReadMore = ({ posts }: ReadMoreProps) => {
         gap="1rem"
       >
         <Flex margin="1rem 0">
-          <ReadMoreHeader renderAs="h2">Read More From Peanut</ReadMoreHeader>
+          <ReadMoreHeader renderAs="h2">{READ_MORE_HEADER_TEXT}</ReadMoreHeader>
         </Flex>
         <PostLists posts={posts} listSize={3} />
       </ReadMoreContainer>
