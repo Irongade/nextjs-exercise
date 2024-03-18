@@ -26,7 +26,7 @@ $ pnpm dev
 # Questions
 
 - Describe your thoughts about your code.
-  > The code is clean and follows NextJs best practices.
+  > The code is clean, extensible and follows NextJs best practices. An SEO friendly approach was used for the blog pages
 
 - Which libraries did you use and why.
   > "styled-components" was used for styling and creating reusable CSS components, "html-react-parser" for rendering the HTML blog content (body) returned from the API, "reading-time" for generating the time it takes to read the blog content, "jest-fetch-mock" for mocking the javascript fetch API in the jest test written. Every other thing was done natively.
