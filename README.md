@@ -23,6 +23,15 @@ Start the application
 $ pnpm dev
 ```
 
+# Routes
+
+```bash
+/blog
+
+/blog/[slug]
+```
+ 
+
 # Questions
 
 - Describe your thoughts about your code.
