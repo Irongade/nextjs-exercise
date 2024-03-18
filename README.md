@@ -2,7 +2,7 @@
 
 NextJs Application
 
-# Steps.
+# Running the app
 
 Install dependencies
 
