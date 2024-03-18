@@ -32,7 +32,7 @@ $ pnpm dev
   > "styled-components" was used for styling and creating reusable CSS components, "html-react-parser" for rendering the HTML blog content (body) returned from the API, "reading-time" for generating the time it takes to read the blog content, "jest-fetch-mock" for mocking the javascript fetch API in the jest test written. Every other thing was done natively.
 
 - What did you enjoy about the challenge? What are you proud of?
-  > I'm happy I was able to implement and extend the application beyond what was expected.
+  > Enjoyed building the UI especially the pagination component.
 
 - What was not so great?
   > It would have been nice to have an API designed specifically for each blog post, I had to filter out each rendered blog post from the list of blog posts everytime, this is not optimal since the data could be fetched (and cached) directly instead.
