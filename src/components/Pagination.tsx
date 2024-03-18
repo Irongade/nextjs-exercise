@@ -6,8 +6,6 @@ import chevronRight from "public/assets/icons/chevronRight.svg";
 import chevronLeft from "public/assets/icons/chevronLeft.svg";
 import Image from "next/image";
 
-const List = styled.ul``;
-
 type PaginationProps = {
   numberOfItems: number;
   numberOfPages: number;
@@ -15,6 +13,9 @@ type PaginationProps = {
   listSize: number;
   onPageChange: (page: number) => void;
 };
+
+const ICON_HEIGHT = 44;
+const ICON_WIDTH = 44;
 
 const Pagination = ({
   numberOfItems,
@@ -32,8 +33,8 @@ const Pagination = ({
       <Image
         src={chevronLeft}
         alt={`Chevron left icon`}
-        width={44}
-        height={44}
+        width={ICON_WIDTH}
+        height={ICON_HEIGHT}
         onClick={() => onPageChange(currentPage - 1)}
       />
       <Flex margin="0 1rem">
@@ -42,8 +43,8 @@ const Pagination = ({
       <Image
         src={chevronRight}
         alt={`Chevron right icon`}
-        width={44}
-        height={44}
+        width={ICON_WIDTH}
+        height={ICON_HEIGHT}
         onClick={() => onPageChange(currentPage + 1)}
       />
     </Flex>

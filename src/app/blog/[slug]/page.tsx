@@ -1,11 +1,12 @@
 import { notFound } from "next/navigation";
-import BlogContentSection from "../../../components/BlogContentSection";
-import BlogHeader from "../../../components/BlogHeader";
-import ImageBanner from "../../../components/ImageBanner";
-import ReadMore from "../../../components/ReadMore";
-import { Container as BlogContainer } from "../../../components/styles/Container";
-import { PostResponse } from "../../../types/Post";
-import { processSlug } from "../../../util/slugHelper";
+import BlogContentSection from "@/src/components/BlogContentSection";
+import BlogHeader from "@/src/components/BlogHeader";
+import ImageBanner from "@/src/components/ImageBanner";
+import ReadMore from "@/src/components/ReadMore";
+import { Container as BlogContainer } from "@/src/components/styles/Container";
+import { PostResponse } from "@/src/types/Post";
+import { processSlug } from "@/src/util/slugHelper";
+import { BLOG_URL } from "@/src/constants";
 
 type Props = {
   params: {
@@ -20,7 +21,7 @@ export async function generateMetadata({ params }: Props) {
 export default async function Page({ params }: Props) {
   // Think about server actions
 
-  const response = await fetch("http://localhost:3000/api/web/posts");
+  const response = await fetch(BLOG_URL);
   const posts: PostResponse = await response.json();
 
   const post = posts.pages.find(

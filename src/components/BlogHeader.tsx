@@ -5,7 +5,7 @@ import Breadcrumb from "./Breadcrumb";
 import Flex from "./styles/Flex";
 import Text from "./styles/Text";
 import readingTime from "reading-time";
-import { generateDateString } from "../util/dateHelper";
+import { generateDateString } from "@/src/util/dateHelper";
 import { Author } from "src/types/Post";
 import styled from "styled-components";
 

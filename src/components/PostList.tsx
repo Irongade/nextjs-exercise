@@ -6,7 +6,7 @@ import PostItem from "./Post";
 import Flex from "./styles/Flex";
 import Grid from "./styles/Grid";
 import { Post } from "src/types/Post";
-import { processSlug } from "../util/slugHelper";
+import { processSlug } from "@/src/util/slugHelper";
 
 type PostListProps = {
   posts: Post[];

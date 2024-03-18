@@ -6,7 +6,7 @@ import { render, screen } from "@testing-library/react";
 import mainPost from "../../../../mainPost.json";
 import "@testing-library/jest-dom";
 import Page from "./page";
-import { processSlug } from "../../../util/slugHelper";
+import { processSlug } from "@/src/util/slugHelper";
 
 const DATA = {
   pages: [

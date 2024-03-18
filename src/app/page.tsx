@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { Container } from "../components/styles/Container";
-import Flex from "../components/styles/Flex";
-import Text from "../components/styles/Text";
+import { Container } from "@/src/components/styles/Container";
+import Flex from "@/src/components/styles/Flex";
+import Text from "@/src/components/styles/Text";
 
 export const metadata = {
   title: "Peanut Exercise",
